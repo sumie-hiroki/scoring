@@ -34,17 +34,17 @@ $(document).ready(function(){
   function get_achievement(){
     // ここに、ランクの値の文字列（平均点が80点以上なら"A"、60点以上なら"B"、40点以上なら"C"、それ以下なら"D"）を出力する処理を書き込む
     // let avg2 = $("#average_indicate").text
-      let avgsc = score_indicate();
-      if (avgsc >= 80) {
-        rank = "A";
-      } else if (avgsc >= 60){
-        rank = "B";
-      } else if (avgsc >= 40) {
-        rank = "C";
-      } else {
-        rank = "D";
-      };
-      $("#evaluation").text(rank);
+    let avgsc = score_indicate();
+    if (avgsc >= 80) {
+      rank = "A";
+    } else if (avgsc >= 60){
+      rank = "B";
+    } else if (avgsc >= 40) {
+      rank = "C";
+    } else {
+      rank = "D";
+    };
+    $("#evaluation").text(rank);
 
     return rank;
 
